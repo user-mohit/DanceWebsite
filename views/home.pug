@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts
+  script(src=' /static/script.js')
+
+block style 
+    style 
+        include ../static/style.css 
+
+block content
+    
+    section#introSection             
+              div.big  Welcome to Mohit's dance Academy
+              div.small Eat Dance Sleep Repeat
+    section#missionSection 
+            h3 Our Mission
+            div.card 
+                h4 Dance Perfection 
+                    div.card-box 
+                       div.card-img 
+                            img(src="/static/image/1.png")
+                       div.card-content 
+                            p This is the best dance academy    
+            div.card 
+                h4 Dance the way you like 
+                    div.card-box 
+                       div.card-img 
+                            img(src="/static/image/2.png")
+                       div.card-content 
+                            p This is the best dance academy    
+            div.card 
+                h4 Expert teaching 
+                    div.card-box 
+                       div.card-img 
+                            img(src="/static/image/3.png")
+                       div.card-content 
+                            p This is the best dance academy   
+    section#sponsorSection 
+            h3 Our Sponsors 
+            div#sponsors 
+                img(src="/static/Sponsor/hp.png" class="spimage")   
+                img(src="/static/Sponsor/apple2.png" class="spimage")   
+                img(src="/static/Sponsor/micro2.png" class="spimage")   
+                img(src="/static/Sponsor/skype.png" class="spimage")
